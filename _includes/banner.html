@@ -2,7 +2,13 @@
 <div class="banner">
   <div class="container">
   	{% if page.categories != null %}
-    	<a href="{{ '/categorias/' | prepend: site.baseurl }}#{{page.categories}}-ref">{{page.categories}}</a>	/
+    {% assign categories = page.categories %}
+    {% for category in categories %}
+    	<a href="{{ '/categorias/' | prepend: site.baseurl }}#{{category | slugify: "latin" }}-ref">{{category}}</a>
+      {% if forloop.last == false %}
+       	/
+      {% endif %}
+      {% endfor %}
     	<a href="{{ '/tag/' | prepend: site.baseurl }}#{{page.tag}}-ref">{{page.tag}}</a>
     {% else %}
     	{{ site.banner }}
