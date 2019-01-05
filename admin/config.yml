@@ -16,4 +16,4 @@ collections:
       - {label: "Data da Publicação", name: "date", widget: "datetime"}
       - {label: "Texto", name: "body", widget: "markdown"}
       - {label: "Categoria", name: "categories", widget: "string"}
-      - {label: "Tag", name: "tag", widget: "tag"}
+      - {label: "Tag", name: "tag", widget: "string"}
