@@ -14,5 +14,4 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Data da Publicação", name: "date", widget: "datetime"}
-      - {label: "Imagem", name: "thumbnail", widget: "image"}
       - {label: "Texto", name: "body", widget: "markdown"}
