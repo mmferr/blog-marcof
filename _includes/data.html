@@ -1,0 +1,5 @@
+{% assign months = "Janeiro|Fevereiro|Março|Abril|Maio|Junho|Julho|Agosto|Setembro|Outubro|Novembro|Dezembro" | split: "|" %}
+{% assign m = page.date | date: "%-m" | minus: 1 %}
+{% assign dia = page.date | date: "%d" %}
+{% assign mes = months[m] %}
+{% assign ano = page.date | date: "%Y" %}

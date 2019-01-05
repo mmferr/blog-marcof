@@ -1,0 +1,34 @@
+# Site settings
+nome: Marco Ferreira
+email: mmferr141@gmail.com
+author: Marco Ferreira
+url: ""
+resume_site: ""
+github: https://github.com/mmferr141
+baseurl: ""
+description: Divagações
+meta_description:
+motto:
+banner: Marco Ferreira
+
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: :day/:month/:day/:title/
+paginate: 10
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+github_username: mmferr141
+
+# Build settings
+#markdown: kramdown
+
+#baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
+
+#Defaults
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      author: site.author
